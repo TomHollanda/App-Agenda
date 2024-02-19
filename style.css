@@ -1,0 +1,17 @@
+
+#Contacts-book {
+    display: block;
+    width: 50%;
+    float: left;
+    background-color: rgb(254, 225, 4);
+    height: 900vh;  
+}
+
+#registre-area {
+    display: block;
+    width: 50%;
+    float: right;
+    background-color: black;
+    color: aliceblue;
+    height: 900vh;
+}
