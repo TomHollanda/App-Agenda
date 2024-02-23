@@ -6,50 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts book</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="Contacts-book">
-        <table>
-            <caption>Contact</caption>
-            <tr>
-                <th>Name</th>
-                <th>Fone</th>
-                <th>address</th>
-                <th>E-mail</th>
-            </tr>
-            <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>98987654</td>
-                <td>Germany</td>
-                <td>@mail.com</td>
-            </tr>
-            <tr>
-                <td>Maria Anders</td>
-                <td>98654312</td>
-                <td>Mexico</td>
-                <td>@mail.com</td>
-            </tr>
-            </table>
+    <div class="Contacts-book-area">
+        <div id="Contacts-book">
+            <table>
+                <caption>Contacts</caption>
+                <tr>
+                    <th>Name</th>
+                    <th>Fone</th>
+                    <th>address</th>
+                    <th>E-mail</th>
+                </tr>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>98987654</td>
+                    <td>Germany</td>
+                    <td>@mail.com</td>
+                </tr>
+                <tr>
+                    <td>Maria Anders</td>
+                    <td>98654312</td>
+                    <td>Mexico</td>
+                    <td>@mail.com</td>
+                </tr>
+                </table>
+            </div>
         </div>
 
-    <aside id="registre-area">
-        <div>
+        <aside id="registre-area">
             <h1>Contact registration</h1>
-            <form action="save">
-                <label for="contactname">Contact name:</label><br>
-                <input type="text" id="contactname" name="contactname"><br>
-                <label for="contact">Contact nunber:</label><br>
-                <input type="number" id="contact" name="contact" maxlength="14" placeholder="(XX) 
-                XXXX-XXXX">
-                <label for="address">address:</label><br>
-                <input type="text" id="address" name="address"><br>
-                <label for="E-mail">E-mail:</label><br>
-                <input type="email" id="E-mail" name="E-mail"><br>
-            </form>
-            <button>Save Contact</button>
-        </div>
-    </aside>
-    
-    
+            <div>
+                <form action="save">
+                    <label for="contactname">Contact name:</label><br>
+                    <input type="text" id="contactname" name="contactname"><br>
+                    <label for="contact">Contact nunber:</label><br>
+                    <input type="number" id="contact" name="contact" maxlength="14" placeholder="(XX)X XXXX-XXXX">
+                    <label for="address">address:</label><br>
+                    <input type="text" id="address" name="address"><br>
+                    <label for="E-mail">E-mail:</label><br>
+                    <input type="email" id="E-mail" name="E-mail"><br>
+                </form>
+                <button class="place-order place-order--default">
+                    <div class="default text">Save</div>
+                    <div class="forklift">
+                        <div class="upper"></div>
+                        <div class="lower"></div>
+                    </div>
+                    <div class="box animation"></div>
+                    <div class="done text">Done</div>
+                </button>
+        </aside>
+    </div>
+    <script src="/main.js"></script>
 </body>
 </html>
