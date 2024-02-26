@@ -18,21 +18,12 @@
                 <tr>
                     <th>Name</th>
                     <th>Fone</th>
-                    <th>address</th>
                     <th>E-mail</th>
                 </tr>
-                <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>98987654</td>
-                    <td>Germany</td>
-                    <td>@mail.com</td>
-                </tr>
-                <tr>
-                    <td>Maria Anders</td>
-                    <td>98654312</td>
-                    <td>Mexico</td>
-                    <td>@mail.com</td>
-                </tr>
+
+                <tbody>
+                </tbody>
+
                 </table>
             </div>
         </div>
@@ -40,17 +31,15 @@
         <aside id="registre-area">
             <h1>Contact registration</h1>
             <div>
-                <form action="save">
+                <form id="form-registre">
                     <label for="contactname">Contact name:</label><br>
                     <input type="text" id="contactname" name="contactname"><br>
                     <label for="contact">Contact nunber:</label><br>
                     <input type="number" id="contact" name="contact" maxlength="14" placeholder="(XX)X XXXX-XXXX">
-                    <label for="address">address:</label><br>
-                    <input type="text" id="address" name="address"><br>
                     <label for="E-mail">E-mail:</label><br>
                     <input type="email" id="E-mail" name="E-mail"><br>
                 </form>
-                <button class="place-order place-order--default">
+                <button class="place-order place-order--default" id="save-button">
                     <div class="default text">Save</div>
                     <div class="forklift">
                         <div class="upper"></div>
