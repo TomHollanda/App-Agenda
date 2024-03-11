@@ -32,12 +32,12 @@
             <h1>Contact registration</h1>
             <div>
                 <form id="form-registre">
-                    <label for="contactname">Contact name:</label><br>
-                    <input type="text" id="contactname" name="contactname"><br>
-                    <label for="contact">Contact nunber:</label><br>
-                    <input type="number" id="contact" name="contact" maxlength="14" placeholder="(XX)X XXXX-XXXX">
-                    <label for="E-mail">E-mail:</label><br>
-                    <input type="email" id="E-mail" name="E-mail"><br>
+                    <label for="contactname">Contact name</label><br>
+                    <input type="text" id="contactname" name="contactname" placeholder="Nome Sobrenome" required><br>
+                    <label for="contact">Fone</label><br>
+                    <input type="number" id="contact" name="contact" maxlength="14" placeholder="(XX)X XXXX-XXXX" required>
+                    <label for="email">E-mail</label ><br>
+                    <input type="email" id="email" name="email" placeholder="exemplo@email.com" required><br>
                 </form>
                 <button class="place-order place-order--default" id="save-button">
                     <div class="default text">Save</div>
